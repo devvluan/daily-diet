@@ -9,7 +9,7 @@ import {
 } from "./styles";
 
 type Props = TouchableOpacityProps & {
-  icon: keyof typeof MaterialIcons.glyphMap;
+  icon?: keyof typeof MaterialIcons.glyphMap;
   title: string;
   type?: ButtonTypeStyleProps;
 };
@@ -17,9 +17,11 @@ type Props = TouchableOpacityProps & {
 export function Button({ icon, title, type = "PRIMARY", ...rest }: Props) {
   return (
     <Container type={type} {...rest}>
-      <ViewIcon>
-        <Icon type={type} name={icon} />
-      </ViewIcon>
+      {icon && (
+        <ViewIcon>
+          <Icon type={type} name={icon} />
+        </ViewIcon>
+      )}
       <Title type={type}>{title}</Title>
     </Container>
   );

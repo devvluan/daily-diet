@@ -11,14 +11,15 @@ type Props = {
 export const Container = styled(TouchableOpacity)<Props>`
   flex: 1;
 
+  width: 80%;
   min-height: 56px;
   max-height: 56px;
 
-  background-color: ${({ theme, type }: { theme: DefaultTheme; type: ButtonTypeStyleProps }) => type === "PRIMARY" ? theme.COLORS.GRAY_400 : theme.COLORS.WHITE};
+  background-color: ${({ theme, type }: { theme: DefaultTheme; type: ButtonTypeStyleProps }) => type === "PRIMARY" ? theme.COLORS.GRAY_700 : theme.COLORS.WHITE};
 
   border-radius: 6px;
   border-width: 1px;
-  border-color: ${({ theme, type }: { theme: DefaultTheme; type: ButtonTypeStyleProps }) => type === "PRIMARY" ? theme.COLORS.GRAY_400 : theme.COLORS.GRAY_700};
+  border-color: ${({ theme, type }: { theme: DefaultTheme; type: ButtonTypeStyleProps }) => type === "PRIMARY" ? theme.COLORS.GRAY_700 : theme.COLORS.GRAY_700};
 
   flex-direction: row;
   justify-content: center;

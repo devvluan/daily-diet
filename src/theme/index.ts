@@ -10,13 +10,13 @@ const theme = {
     RED_MID: '#F3BABD',
     RED_LIGHT: '#F4E6E7',
 
-    GRAY_700: '#121214',
-    GRAY_600: '#202024',
-    GRAY_500: '#29292E',
-    GRAY_400: '#323238',
-    GRAY_300: '#7C7C8A',
-    GRAY_200: '#C4C4CC',
-    GRAY_100: '#E1E1E6'
+    GRAY_700: '#1B1D1E',
+    GRAY_600: '#333638',
+    GRAY_500: '#5C6265',
+    GRAY_400: '#B9BBBC',
+    GRAY_300: '#DDDEDF',
+    GRAY_200: '#EFF0F0',
+    GRAY_100: '#FAFAFA'
   },
   FONT_FAMILY: {
     REGULAR: 'NunitoSans_400Regular',

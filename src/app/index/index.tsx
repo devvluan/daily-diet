@@ -8,14 +8,14 @@ import {
 
 import theme from "../../theme";
 
-import { Home } from "@screens/home";
 import { Loading } from "@components/Loading";
+import { Creation } from "@screens/Creation";
 
 export default function Index() {
   const [fontsLoaded] = useFonts({ NunitoSans_400Regular, NunitoSans_700Bold });
   return (
     <ThemeProvider theme={theme}>
-      {fontsLoaded ? <Home /> : <Loading />}
+      {fontsLoaded ? <Creation /> : <Loading />}
     </ThemeProvider>
   );
 }
